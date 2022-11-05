@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue--100: #2f47f2;
+    --blue--200: #13239b;
+    --clr-footer: #4459f1;
+    --clr-header: var(--blue--100);
+    --clr-footer: var(--blue--200);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}   

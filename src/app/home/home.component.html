@@ -1,0 +1,17 @@
+<section [ngClass]="articles.type" *ngFor="let articles of articlesToDisplay">
+    <h1>{{articles.type.split("-").join(" ") | titlecase}}</h1>
+    <div class="articles">
+        <div class ="main-article">
+            <article-thumbnail [article]="articles.articles[0]"></article-thumbnail>
+        </div>
+        <div class="other-articles">
+            <article-thumbnail *ngFor="let article of articles.articles.slice(1)" view="other" [article]="article"></article-thumbnail>
+        </div>
+    </div>
+</section>
+<section class="patch-notes">
+        <h1>Patch Notes</h1>
+</section>
+<section class="videos">
+        <h1>Videos</h1>
+</section>
